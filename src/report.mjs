@@ -368,7 +368,7 @@ function buildHtml(products, options = {}) {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Dropshipping Research Report</title>
+  <title>Dropshipping Niche Scout</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 18px; color: #1f2933; background: #fff; }
     h1 { font-size: 28px; margin: 0 0 8px; }
@@ -392,7 +392,7 @@ function buildHtml(products, options = {}) {
   </style>
 </head>
 <body>
-  <h1>Dropshipping Research Report</h1>
+  <h1>Dropshipping Niche Scout</h1>
   <div class="meta">Requested ${limit} report product(s). Showing ${stats.shownAcceptedCount} unique accepted niche candidate(s) out of ${stats.evaluatedCount} evaluated product(s); ${stats.rejectedCount} were rejected or blocked and ${stats.duplicateAcceptedCount} similar accepted product(s) were suppressed so only the best item per niche is shown. Products are not recommended just because they are trending.</div>
 
   <h2>Executive Summary</h2>
@@ -442,7 +442,7 @@ function buildMarkdown(products, options = {}) {
   const stats = reportStats(products, { limit });
   const lines = [];
 
-  lines.push("# Dropshipping Research Report");
+  lines.push("# Dropshipping Niche Scout");
   lines.push("");
   lines.push(`Requested ${limit} report product(s). Showing ${stats.shownAcceptedCount} unique accepted niche candidate(s) out of ${stats.evaluatedCount} evaluated product(s); ${stats.rejectedCount} were rejected or blocked and ${stats.duplicateAcceptedCount} similar accepted product(s) were suppressed so only the best item per niche is shown. Products are not recommended just because they are trending.`);
   lines.push("");

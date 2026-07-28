@@ -1,4 +1,4 @@
-# dropship-codex
+# Dropshipping Niche Scout
 
 A local product-research pipeline for e-commerce / dropshipping. It sources trending
 products, cross-checks demand and competition across multiple platforms, scores each
