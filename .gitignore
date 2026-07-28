@@ -1,0 +1,9 @@
+# Secrets & live account sessions — NEVER commit
+.env
+profiles/
+output/
+
+# Dependencies & OS cruft
+node_modules/
+.DS_Store
+*.log

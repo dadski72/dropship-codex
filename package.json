@@ -1,0 +1,40 @@
+{
+  "name": "dropship-codex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/research-runner.mjs",
+  "scripts": {
+    "login:kalodata": "node src/login.mjs kalodata",
+    "login:facebook": "node src/login.mjs facebook",
+    "login:aliexpress": "node src/login.mjs aliexpress",
+    "login:tiktok": "node src/login.mjs tiktok",
+    "login:all": "npm run login:kalodata && npm run login:facebook && npm run login:aliexpress && npm run login:tiktok",
+    "research": "node src/research-runner.mjs",
+    "full": "npm run login:all && npm run research",
+    "fast": "npm run research",
+    "blacklist": "node src/blacklist.mjs",
+    "blacklist:list": "node src/blacklist.mjs list",
+    "blacklist:add": "node src/blacklist.mjs add",
+    "blacklist:remove": "node src/blacklist.mjs remove",
+    "pw:kalodata": "node src/open-playwright-profile.mjs kalodata",
+    "pw:facebook": "node src/open-playwright-profile.mjs facebook",
+    "pw:aliexpress": "node src/open-playwright-profile.mjs aliexpress",
+    "pw:tiktok": "node src/open-playwright-profile.mjs tiktok",
+    "kalodata:chrome": "node src/open-kalodata-chrome.mjs",
+    "run": "node src/run-with-kalodata.mjs",
+    "kalodata:run": "node src/run-with-kalodata.mjs",
+    "run:visible": "VISIBLE_BROWSER=1 REPORT_FOCUS=1 npm run kalodata:run",
+    "run:focus-click": "ALLOW_FOCUS_CLICK=1 VISIBLE_BROWSER=1 REPORT_FOCUS=1 npm run kalodata:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2",
+    "fs-extra": "^11.3.5",
+    "playwright": "^1.60.0",
+    "zod": "^4.4.3"
+  }
+}
